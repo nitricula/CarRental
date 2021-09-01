@@ -1,14 +1,17 @@
-﻿using Business.Abstract.Mem;
+﻿using Business.Abstract;
+using Business.Abstract.EntityFramework;
 using Entities.Concrete;
+using Entities.Concrete.Dtos;
 using Repositories.Abstract;
 using Repositories.Concrete.IMem;
 using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using System.Text;
 
 namespace Business.Concrete
 {
-    public class CarService:BaseService<Car,ICarDal>
+    public class CarService:BaseService<Car,ICarDal>,ICarService
     {
         public CarService(ICarDal entityDal):base(entityDal)
         {
@@ -26,7 +29,10 @@ namespace Business.Concrete
         {
             entityDal.Update(entity);
         }
-
+        public List<CarDetailDto> GetCarDetailDtos(Expression<Func<Car, bool>> filter = null)
+        {
+            return entityDal.GetCarsDetail(filter);
+        }
         private bool MinimumPriceCheck(Car entity)
         {
             if (entity.DailyPrice > 0)
@@ -40,5 +46,7 @@ namespace Business.Concrete
                 return true;
             throw new Exception("Product must be longer than 1 character.");
         }
+
+        
     }
 }

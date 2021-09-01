@@ -1,8 +1,10 @@
 ﻿using Entities.Concrete;
+using Entities.Concrete.Dtos;
 using Repositories.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 
 namespace Repositories.Concrete.IMem
@@ -22,6 +24,11 @@ namespace Repositories.Concrete.IMem
         public List<Car> GetCarsByColorId(int id)
         {
             return this.entityMem.FindAll(c => c.ColorId == id);
+        }
+
+        public List<CarDetailDto> GetCarsDetail(Expression<Func<Car, bool>> filter = null)
+        {
+            throw new NotImplementedException();
         }
 
         public void Update(Car entity)

@@ -18,10 +18,24 @@ namespace Console
             //BrandTest();
 
             //ColorTest();
-            var carService = new CarService(new EfCarDal());
-            //carService.Add(new Car { BrandId = 1,Name="Ali", ColorId = 1, DailyPrice = 0, Description = "Test", ModelYear = 1975 });
-            carService.Add(new Car { BrandId = 1,Name="A", ColorId = 1, DailyPrice = 3, Description = "Test", ModelYear = 1975 });
+            //ExceptionCheck();
 
+            var carService = new CarService(new EfCarDal());
+
+            var result =carService.GetCarDetailDtos();
+
+            foreach (var item in result)
+            {
+                System.Console.WriteLine(item.CarName + "  " + item.BrandName + "  " + item.ColorName + "  " + item.DailyPrice);
+            }
+
+        }
+
+        private static void ExceptionCheck()
+        {
+            var carService = new CarService(new EfCarDal());
+            carService.Add(new Car { BrandId = 1, Name = "Ali", ColorId = 1, DailyPrice = 0, Description = "Test", ModelYear = 1975 });
+            carService.Add(new Car { BrandId = 1, Name = "A", ColorId = 1, DailyPrice = 3, Description = "Test", ModelYear = 1975 });
         }
 
         private static void ColorTest()

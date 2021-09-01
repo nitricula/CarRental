@@ -5,9 +5,9 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Text;
 
-namespace Business.Abstract.Mem
+namespace Business.Abstract
 {
-    public class BaseService<T,TDal>:IService<T>
+    public class BaseService<T,TDal>
         where T:class,IEntity,new()
         where TDal:class,IRepository<T>
     {
