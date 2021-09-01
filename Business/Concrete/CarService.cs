@@ -1,9 +1,14 @@
 ﻿using Business.Abstract;
 using Business.Abstract.EntityFramework;
+using Core.Services.Abstarct;
+using Core.Utilities.Results.Abstract;
+using Core.Utilities.Results.Concrete.Errors;
+using Core.Utilities.Results.Concrete.Success;
+using Core.Utilities.Ruler;
 using Entities.Concrete;
 using Entities.Concrete.Dtos;
 using Repositories.Abstract;
-using Repositories.Concrete.IMem;
+
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
@@ -19,8 +24,13 @@ namespace Business.Concrete
         }
         public void Add(Car entity)
         {
-           if(MinimumNameCheck(entity)&&MinimumPriceCheck(entity)) 
+           IResult ruleresult = BusinessRuler.Test(MinimumNameCheck(entity), MinimumPriceCheck(entity));
+           if(ruleresult.Success)
                 entityDal.Add(entity);
+            else
+            {
+                Console.WriteLine(ruleresult.Message);
+            }
         }
 
         
@@ -33,18 +43,18 @@ namespace Business.Concrete
         {
             return entityDal.GetCarsDetail(filter);
         }
-        private bool MinimumPriceCheck(Car entity)
+        private IResult MinimumPriceCheck(Car entity)
         {
             if (entity.DailyPrice > 0)
-                return true;
-            throw new Exception("Product must be greater than 0");
+                return new SuccessResult();
+            return new ErrorResult("Product must be greater than 0");
         }
 
-        private bool MinimumNameCheck(Car entity)
+        private IResult MinimumNameCheck(Car entity)
         {
             if (entity.Name.Length >= 2)
-                return true;
-            throw new Exception("Product must be longer than 1 character.");
+                return new SuccessResult();
+            return new ErrorResult("Product must be longer than 1 character.");
         }
 
         

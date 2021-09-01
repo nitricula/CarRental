@@ -20,15 +20,20 @@ namespace Console
             //ColorTest();
             //ExceptionCheck();
 
+            //CarDetailTest();
+
+        }
+
+        private static void CarDetailTest()
+        {
             var carService = new CarService(new EfCarDal());
 
-            var result =carService.GetCarDetailDtos();
+            var result = carService.GetCarDetailDtos();
 
             foreach (var item in result)
             {
                 System.Console.WriteLine(item.CarName + "  " + item.BrandName + "  " + item.ColorName + "  " + item.DailyPrice);
             }
-
         }
 
         private static void ExceptionCheck()
@@ -51,7 +56,7 @@ namespace Console
 
             var result = colorService.GetAll();
 
-            foreach (var item in result)
+            foreach (var item in result.Data)
             {
                 System.Console.WriteLine(item.Name);
             }
@@ -67,7 +72,7 @@ namespace Console
 
             var result = brandService.GetAll();
 
-            foreach (var item in result)
+            foreach (var item in result.Data)
             {
                 System.Console.WriteLine(item.Name);
             }
@@ -87,7 +92,7 @@ namespace Console
             //carService.Delete(carService.Get(c=>c.Id==1002));
             //System.Console.WriteLine(result.Description);
             var result = carService.GetAll();
-            foreach (var item in result)
+            foreach (var item in result.Data)
             {
                 System.Console.WriteLine(item.Description);
             }
@@ -102,12 +107,12 @@ namespace Console
             carService.Add(car1);
             carService.Add(car2);
             carService.Add(car3);
-            foreach (var item in carService.GetAll())
+            foreach (var item in carService.GetAll().Data)
             {
                 System.Console.WriteLine(item.Id);
             }
             carService.Delete(car2);
-            foreach (var item in carService.GetAll())
+            foreach (var item in carService.GetAll().Data)
             {
                 System.Console.WriteLine(item.Id);
             }

@@ -1,6 +1,6 @@
-﻿using Business.Abstract;
+﻿
 using Business.Abstract.EntityFramework;
-
+using Core.Services.Abstarct;
 using Entities.Concrete;
 using Repositories.Abstract;
 
