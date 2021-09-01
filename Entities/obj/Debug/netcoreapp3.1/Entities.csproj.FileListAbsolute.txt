@@ -1,0 +1,9 @@
+D:\SOFTW\BootCamp\ReCapProject\Entities\bin\Debug\netcoreapp3.1\Entities.deps.json
+D:\SOFTW\BootCamp\ReCapProject\Entities\bin\Debug\netcoreapp3.1\Entities.dll
+D:\SOFTW\BootCamp\ReCapProject\Entities\bin\Debug\netcoreapp3.1\Entities.pdb
+D:\SOFTW\BootCamp\ReCapProject\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfoInputs.cache
+D:\SOFTW\BootCamp\ReCapProject\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfo.cs
+D:\SOFTW\BootCamp\ReCapProject\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.CoreCompileInputs.cache
+D:\SOFTW\BootCamp\ReCapProject\Entities\obj\Debug\netcoreapp3.1\Entities.dll
+D:\SOFTW\BootCamp\ReCapProject\Entities\obj\Debug\netcoreapp3.1\Entities.pdb
+D:\SOFTW\BootCamp\ReCapProject\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.AssemblyReference.cache

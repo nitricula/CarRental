@@ -1,0 +1,14 @@
+D:\SOFTW\BootCamp\ReCapProject\Business\bin\Debug\netcoreapp3.1\Business.deps.json
+D:\SOFTW\BootCamp\ReCapProject\Business\bin\Debug\netcoreapp3.1\Business.dll
+D:\SOFTW\BootCamp\ReCapProject\Business\bin\Debug\netcoreapp3.1\Business.pdb
+D:\SOFTW\BootCamp\ReCapProject\Business\bin\Debug\netcoreapp3.1\Entities.dll
+D:\SOFTW\BootCamp\ReCapProject\Business\bin\Debug\netcoreapp3.1\Repositories.dll
+D:\SOFTW\BootCamp\ReCapProject\Business\bin\Debug\netcoreapp3.1\Entities.pdb
+D:\SOFTW\BootCamp\ReCapProject\Business\bin\Debug\netcoreapp3.1\Repositories.pdb
+D:\SOFTW\BootCamp\ReCapProject\Business\obj\Debug\netcoreapp3.1\Business.csproj.AssemblyReference.cache
+D:\SOFTW\BootCamp\ReCapProject\Business\obj\Debug\netcoreapp3.1\Business.AssemblyInfoInputs.cache
+D:\SOFTW\BootCamp\ReCapProject\Business\obj\Debug\netcoreapp3.1\Business.AssemblyInfo.cs
+D:\SOFTW\BootCamp\ReCapProject\Business\obj\Debug\netcoreapp3.1\Business.csproj.CoreCompileInputs.cache
+D:\SOFTW\BootCamp\ReCapProject\Business\obj\Debug\netcoreapp3.1\Business.csproj.CopyComplete
+D:\SOFTW\BootCamp\ReCapProject\Business\obj\Debug\netcoreapp3.1\Business.dll
+D:\SOFTW\BootCamp\ReCapProject\Business\obj\Debug\netcoreapp3.1\Business.pdb
