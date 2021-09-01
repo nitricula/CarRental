@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Repositories.Concrete
+namespace Repositories.Concrete.EntityFramework
 {
     public class CarRentalContext:DbContext
     {

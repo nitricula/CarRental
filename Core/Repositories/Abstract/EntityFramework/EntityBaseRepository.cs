@@ -53,11 +53,9 @@ namespace Repositories.Abstract.EntityFramework
         {
             using (var context = new TContext())
             {
-                var r = context.Set<TEntity>().ToList();
-                return r;
-                //return filter == null ?
-                //    context.Set<Car>().ToList() :
-                //    context.Set<Car>().Where(filter).ToList();
+                return filter == null ?
+                    context.Set<TEntity>().ToList() :
+                    context.Set<TEntity>().Where(filter).ToList();
             }
         }
     }

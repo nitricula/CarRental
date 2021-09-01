@@ -1483,9 +1483,25 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.9"
+        },
+        "compile": {
+          "bin/placeholder/Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.dll": {}
+        }
+      },
       "Entities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Core": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Entities.dll": {}
         },
@@ -1497,6 +1513,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "Core": "1.0.0",
           "Entities": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.9"
         },
@@ -5719,6 +5736,11 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "Core/1.0.0": {
+      "type": "project",
+      "path": "../Core/Core.csproj",
+      "msbuildProject": "../Core/Core.csproj"
+    },
     "Entities/1.0.0": {
       "type": "project",
       "path": "../Entities/Entities.csproj",
@@ -5732,6 +5754,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Core >= 1.0.0",
       "Entities >= 1.0.0",
       "Repositories >= 1.0.0"
     ]
@@ -5763,6 +5786,9 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
+            "D:\\SOFTW\\BootCamp\\ReCapProject\\Core\\Core.csproj": {
+              "projectPath": "D:\\SOFTW\\BootCamp\\ReCapProject\\Core\\Core.csproj"
+            },
             "D:\\SOFTW\\BootCamp\\ReCapProject\\Entities\\Entities.csproj": {
               "projectPath": "D:\\SOFTW\\BootCamp\\ReCapProject\\Entities\\Entities.csproj"
             },

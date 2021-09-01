@@ -1,0 +1,9 @@
+D:\SOFTW\BootCamp\ReCapProject\Core\obj\Debug\netcoreapp3.1\Core.csproj.AssemblyReference.cache
+D:\SOFTW\BootCamp\ReCapProject\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfoInputs.cache
+D:\SOFTW\BootCamp\ReCapProject\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfo.cs
+D:\SOFTW\BootCamp\ReCapProject\Core\obj\Debug\netcoreapp3.1\Core.csproj.CoreCompileInputs.cache
+D:\SOFTW\BootCamp\ReCapProject\Core\bin\Debug\netcoreapp3.1\Core.deps.json
+D:\SOFTW\BootCamp\ReCapProject\Core\bin\Debug\netcoreapp3.1\Core.dll
+D:\SOFTW\BootCamp\ReCapProject\Core\bin\Debug\netcoreapp3.1\Core.pdb
+D:\SOFTW\BootCamp\ReCapProject\Core\obj\Debug\netcoreapp3.1\Core.dll
+D:\SOFTW\BootCamp\ReCapProject\Core\obj\Debug\netcoreapp3.1\Core.pdb

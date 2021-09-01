@@ -10,3 +10,5 @@ D:\SOFTW\BootCamp\ReCapProject\Repositories\obj\Debug\netcoreapp3.1\Repositories
 D:\SOFTW\BootCamp\ReCapProject\Repositories\obj\Debug\netcoreapp3.1\Repositories.csproj.CopyComplete
 D:\SOFTW\BootCamp\ReCapProject\Repositories\obj\Debug\netcoreapp3.1\Repositories.dll
 D:\SOFTW\BootCamp\ReCapProject\Repositories\obj\Debug\netcoreapp3.1\Repositories.pdb
+D:\SOFTW\BootCamp\ReCapProject\Repositories\bin\Debug\netcoreapp3.1\Core.dll
+D:\SOFTW\BootCamp\ReCapProject\Repositories\bin\Debug\netcoreapp3.1\Core.pdb

@@ -7,3 +7,6 @@ D:\SOFTW\BootCamp\ReCapProject\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.
 D:\SOFTW\BootCamp\ReCapProject\Entities\obj\Debug\netcoreapp3.1\Entities.dll
 D:\SOFTW\BootCamp\ReCapProject\Entities\obj\Debug\netcoreapp3.1\Entities.pdb
 D:\SOFTW\BootCamp\ReCapProject\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.AssemblyReference.cache
+D:\SOFTW\BootCamp\ReCapProject\Entities\bin\Debug\netcoreapp3.1\Core.dll
+D:\SOFTW\BootCamp\ReCapProject\Entities\bin\Debug\netcoreapp3.1\Core.pdb
+D:\SOFTW\BootCamp\ReCapProject\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.CopyComplete
